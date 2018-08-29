@@ -1,0 +1,70 @@
+<!-- 
+<view class="page-body auto-wkf txt-ct">
+<text class=''>
+抱歉该区暂未开放，敬请期待!
+</text>
+</view> -->
+<view id='app'>
+
+<form bindsubmit="formSubmit">
+    <view class="type">
+        <view class="type_title ">爱好：</view>
+        <view class="active_title">
+            <input class="ac_ipt" maxlength="12" name="hobby" placeholder="请填写个人爱好，限12个字" value="{{card_info.hobby}}"></input>
+        </view>
+    </view>
+    <view class="type">
+        <view class="type_title ">微信号：</view>
+        <view class="active_title" wx:if="{{card_info.wechat_number=='null'}}">
+            <input class="ac_ipt" name="wechat_number" placeholder="请填写微信号" value=""></input>
+        </view>
+        <view class="active_title" wx:else>
+            <input class="ac_ipt" name="wechat_number" placeholder="请填写微信号" value="{{card_info.wechat_number}}"></input>
+        </view>
+    </view>
+    <view class="tel">
+        <view class="tel_type_title ">微信是否公开：</view>
+        <view class="tel_active_title" wx:if="{{card_info.if_public==2}}">
+            <switch checked bindchange="switchChange" class="switch"></switch>
+        </view>
+        <view class="tel_active_title" wx:else>
+            <switch bindchange="switchChange" class="switch"></switch>
+        </view>
+    </view>
+    <view class="type" wx:if="{{show_tel}}">
+        <view class="type_title ">查看微信所需金额：</view>
+        <view class="money_active_title">
+            <input class="tel_ac_ipt" maxlength="6" name="pay_money" placeholder="好友查看你微信需要付费" type="number" value="{{card_info.pay_money}}"></input>
+        </view>
+    </view>
+    <view class="picBox">
+        <view class="cover">封面图：</view>
+        <view bindtap="chooseCover" class="imgBox2">
+            <image class="img2" mode="aspectFit" src="/image/upload-img.png"></image>
+        </view>
+        <view bindtap="delCover" class="imgBox2" wx:if="{{coverTempFilePath}}">
+            <image class="img2" mode="aspectFit" src="{{coverTempFilePath}}"></image>
+        </view>
+    </view>
+    <view class="suggest">建议上传正方形照片，点击图片可以删除图片</view>
+    <view class="abstract">
+        <view class="ab_title">个人介绍：</view>
+        <view class="ab_textarea">
+            <textarea class="ptext" name="introduction" placeholder="介绍下自己吧~" value="{{card_info.introduction}}"></textarea>
+        </view>
+    </view>
+    <view class="lifePicBox">
+        <view class="cover">生活靓照：</view>
+        <view bindtap="chooseLife" class="imgBox2">
+            <image class="img2" src="/image/upload-img.png"></image>
+        </view>
+        <view bindtap="delLifePic" class="imgBox" data-pic_index="{{idx}}" wx:if="{{lifeTempFilePaths.length!=0}}" wx:for="{{lifeTempFilePaths}}" wx:for-index="idx" wx:for-item="vo" wx:key="{{idx}}">
+            <image class="img" src="{{vo}}"></image>
+        </view>
+    </view>
+    <view class="suggest2">建议照片尺寸：596*794，点击图片可以删除图片</view>
+    <button class="btn" formType="submit">保存</button>
+    <view class="bottom_hr"></view>
+</form>
+
+</view>

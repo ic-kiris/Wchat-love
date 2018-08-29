@@ -1,0 +1,146 @@
+#app {
+  overflow-y: hidden;
+}
+
+#app .app-banner {
+  width: 100%;
+  height: 372rpx;
+}
+
+#app .app-main {
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+}
+
+#app .app-main .user-info {
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+#app .app-main .user-info .userImg {
+  margin-left: 40rpx;
+  margin-top: -80rpx;
+  width: 150rpx;
+  height: 150rpx;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+#app .app-main .user-info .username {
+  margin-left: 40rpx;
+  font-size: 32rpx;
+  color: #000;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-weight: 500;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#app .app-main .userinfo-list {
+  width: 100%;
+  margin: 40rpx 0rpx;
+}
+
+#app .app-main .userinfo-list .list-item {
+  width: 90%;
+  padding: 0px 30rpx;
+  margin: 12rpx 40rpx;
+  background-color: white;
+  height: 100rpx;
+  text-align: left;
+  line-height: 100rpx;
+  -webkit-box-shadow: 0 5rpx 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 5rpx 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5rpx 2px rgba(0, 0, 0, 0.1);
+}
+.list-item button::after {
+  border: none;
+  outline: none;
+}
+.list-item button{
+  background: #fff;
+  font-size: 28rpx;
+  text-align: left;
+  width: 100%;
+  margin-left: 18rpx;
+  line-height: none;
+  border-radius: 0;
+  display: inline;
+  padding: 0;
+}
+#app .app-main .userinfo-list .list-item navigator {
+  display: block;
+  width: 100%;
+  height: 105rpx;
+  line-height: 104rpx;
+  position: relative;
+}
+
+#app .app-main .userinfo-list .list-item  .icon {
+  vertical-align: middle;
+  margin: auto;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+#app .app-main .userinfo-list .list-item navigator .item-text {
+  font-size: 28rpx;
+  margin-left: 18rpx;
+}
+
+#app .app-main .userinfo-list .list-item navigator .icon-aixin01 {
+  color: #f01905;
+}
+
+#app .app-main .userinfo-list .list-item navigator .icon-xinxi {
+  color: #f09a05;
+}
+
+#app .app-main .userinfo-list .list-item navigator .icon-xinxi2 {
+  color: #059af0;
+}
+
+#app .app-main .userinfo-list .list-item navigator .badeg {
+  position: absolute;
+  right: 69rpx;
+  top: 50%;
+  margin-top: -19rpx;
+  width: 38rpx;
+  display: inline-block;
+  height: 38rpx;
+  text-align: center;
+  line-height: 38rpx;
+  background-color: #f01905;
+  color: white;
+  font-size: 26rpx;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  font-weight: 500;
+}
+
+.footcroty {
+  padding-top: 36rpx;
+  text-align: center;
+  height: 400rpx;
+  margin-bottom: 50rpx;
+  font-size: 28rpx;
+  background-color: #fff;
+}
+
+.img_fot {
+  width: 90px;
+  height: 180rpx;
+  margin-bottom: 40rpx;
+}
+
+.footcroty text {
+  line-height: 50rpx;
+  color: #f09a05;
+}

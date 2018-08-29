@@ -1,0 +1,67 @@
+<import src="../../libs/ToolTip/toolTip.wxml" />
+<view id="app">
+<view class='tz-pd'>
+<image class='tz' src='../../../image/tz.png'></image>
+  <swiper class="swiper_container" id='pao-gd' vertical="true" autoplay="true" circular="true" interval="2000">
+    <block wx:for="{{msgList}}" wx:for-item="item" wx:key="objectId">
+      <swiper-item>
+        <view class="swiper_item">
+          {{item.title}}</view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+  <form catchsubmit="formSubmit" catchreset="formReset">
+    <view class="post-container">
+      <view class='txt-title'>
+        <text>表白对象:</text>
+        <input placeholder="我表白" name="title" class="input-title" bindinput="titleEventFunc" placeholder-class="input-class" />
+      </view>
+      <view class='nr-dh-con'>
+        表白内容:
+        <textarea class="textarea clearfix" name="content" maxlength="150" focus="{{focus}}" placeholder="有话就大声说出来" bindblur="contentEventFunc" />
+      </view>
+
+      <image class="upload-image" name="uploadImage" wx:for="{{productSrc}}" data-index="{{index}}" src="{{item}}" bindlongtap="handDeleteImg"></image>
+      <video src="{{videoSource}}" hidden="{{videoHidden}}" style="width: 100%; height: 100%"/>
+      <button class="primary btn-upload" hover-clas="button-hover" bindtap="uploadImg">
+        <image class="icon" src='../../../image/upload-img.png'></image>
+      </button>
+      <block wx:for="{{productSrc}}" wx:for-item="image" wx:for-index='idx'>
+
+        <view class="weui-uploader__file">
+          <text>预览图片*</text>
+          <image class="weui-uploader__img" src="{{image}}" data-id="{{idx}}" data-src="{{image}}" bindtap="previewImage"></image>
+        </view>
+      </block>
+      <view class="tip">
+        <text>*长按图片可删除</text>
+        <text>
+      注意:上传图片默认第一张为封面图
+      </text>
+      </view>
+
+      <view class='clearfix'></view>
+      <view class='line-wx-h'>
+        <view class="switch-view">
+        开启匿名:
+          <switch type="switch" name="isChecked" bindchange="isNameEventFunc" />
+        </view>
+        <view class="btn-group">
+
+          <button class="btn-reset" hover-class="btn-active" form-type="reset">
+            清除内容/视频/文字
+          </button>
+        </view>
+      </view>
+      <view class='btn-fb'>
+        <button class="btn-sumbit" hover-class="btn-active" form-type="submit">
+          发布表白
+        </button>
+      </view>
+    </view>
+  </form>
+</view>
+<!--提示信息框-->
+<template is="toolTip" data="{{_toolTip_}}" />
+<!--提示信息框-->

@@ -1,0 +1,9 @@
+/* components/goback/back.wxss */
+.goback{
+text-align: left;
+margin-left: 15rpx;
+line-height: 50rpx;
+margin-top: 60rpx;
+font-size: 30rpx;
+color: #444;
+}

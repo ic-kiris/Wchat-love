@@ -1,0 +1,28 @@
+<import src="template-content-list.wxml" />
+  <view id="app"> 
+<view class='content'>
+<view class='banner'>
+    <swiper class="swiper-container" indicator-active-color='#ccc' indicator-dots="true" circular='false' autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{das}}" wx:for-item="tomg" wx:key="objectId">
+        <swiper-item >
+          <image src="{{tomg.img}}" class="swiper-item" />
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+
+    <!-- con-list start -->
+    <template is="content-list" data="{{contentList}}" />
+    <!-- con-list end-->
+    <view class="tips">
+      @临职小电哥 与你倾心相遇
+    </view>
+
+ </view>
+  </view>
+
+  <view>
+<!-- <dialog bindtap="tapDialog"  id="dialog" bind:cancelEvent="cancelEvent" bind:okEvent="okEvent"></dialog> -->
+<!-- <button >显示弹出框</button> -->
+  </view>
+

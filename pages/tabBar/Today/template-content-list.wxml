@@ -1,0 +1,50 @@
+<template name="content-list">
+  <view class="comment" wx:for="{{contentList}}" wx:key="key">
+   <view  class="content-item">
+      <view class="content-header">
+        <view class='head-lt'>
+        <image class="headImg" src="{{item.headImg}}"></image>
+         <text class="user-name">{{item.username}}</text>
+        </view>
+
+                 <scroll-view class='nav-head' scroll-x="true">
+                 表白对象：
+         <text class='user-title txt-rt'>{{item.title}}</text>
+        </scroll-view>
+      </view>
+      <view class="hr"></view>
+       
+      <view class="content-body">
+        <view class="content-text">
+          <text class="comment-text" id='c-c-txt'>
+            {{item.content}}
+          </text>
+        </view>
+        <view class="content-object">
+          <image wx:if="{{item.contentImg[0]}}" src="{{item.contentImg[0]}}"></image>
+        </view>
+      </view>
+      <view class='hr'></view>
+      <view class="content-footer">
+        <view class="footer-applaud">
+          <image src='/image/zan.png'></image>
+          <text class="applaud-num">{{item.supportNum.length?item.supportNum.length:'0'}}</text>
+        </view>
+        <view class="footer-comment">
+          <image src='../../../image/ic/xx-active.png'></image>
+          <text class="comment-num">{{item.comments.length?item.comments.length:'0'}}</text>
+        </view>
+      </view>
+      	<view class="review-header">
+							<view class="user-content">
+								<view class="user-name">{{item.author.nickName}}</view>
+								<text class="time">{{item.formatDate}}</text>
+							</view>
+						</view>
+         <navigator  data-id="{{item.objectId}}" bindtap="goDetails">  
+      <view class='txt-ct ft-more'>点击查看更多留言</view>
+    </navigator>
+</view>
+  </view>
+
+</template>

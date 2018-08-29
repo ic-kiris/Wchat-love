@@ -1,0 +1,16 @@
+<view class="page-body" id='app'>
+  <view class="auth">
+    <image src="/image/heart.png" class="ic-logo"></image>
+    <view class="title">临职小电哥授权提示</view>
+    <view class="describe">为了您以后的使用，我们需要获取您的用户信息</view>
+    <button class="btn" open-type='getUserInfo' wx:if="{{canIUse}}" bindgetuserinfo='onAuth'>点击微信授权</button>
+    <navigator wx:if="{{!canIUse}}" class="btn" url="/pages/auth/auth" open-type="reLaunch" hover-class="other-navigator-hover">已经授权点击调转</navigator>
+      <view>
+    <text class="titile-cl">临职表白墙 与你 不见不散</text>
+  </view>
+  <view style='margin:20rpx 0;'>
+  <text class="author"> © 版权所有  临职小电哥</text>
+  </view>
+  </view>
+
+</view>

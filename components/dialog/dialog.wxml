@@ -1,0 +1,14 @@
+<view hidden="{{!isShow}}">
+    <view class="ys-mask"></view>
+    <view class="ys-dialog">
+        <view class="ys-dialog-title">{{title}}</view>
+        <view class="ys-dialog-content">{{content}}</view>
+        <view class="ys-dialog-bottom">
+            <view class="ys-dialog-btn" catchtap="_cancelEvent">{{cancelText}}</view>
+            <view class="ys-dialog-btn ys-dialog-ok-btn" open-type="getUserInfo" bindgetuserinfo='bindGetUserInfo' catchtap="_okEvent">{{okText}}</view>
+        </view>
+    </view>
+</view>
+
+
+

@@ -1,0 +1,31 @@
+<view id="app">
+  <view class="app-banner">
+    <image class="app-banner" src="{{bannerSrc}}"></image>
+  </view>
+
+  <view class="app-main">
+    <view class="user-info">
+      <image class="userImg" src="{{userInfo.avatarUrl}}"></image>
+      <text class="username">{{userInfo.nickName}}</text>
+    </view>
+    <scroll-view scroll-y="true" style="height:{{height}}px;">
+    <view class="userinfo-list">
+      <view class="list-item">
+        <image class='icon' src="../../../image/ic/new.png"></image>
+        <button open-type='contact'>
+          <text class="item-text">联系我们</text>
+        </button>
+      </view>
+      <view class="list-item" wx:for="{{userinfoList}}">
+        <navigator url="{{item.url}}">
+          <image class='icon' src="{{item.icon}}"></image>
+          <text class="item-text">{{item.text}}</text>
+          <text class="badeg" wx:if="{{item.badeg}}">{{item.badeg}}</text>
+        </navigator>
+      </view>
+    </view>
+    </scroll-view>
+  </view>
+
+
+</view>

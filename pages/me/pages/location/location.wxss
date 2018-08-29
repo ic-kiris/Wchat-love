@@ -1,0 +1,11 @@
+.auto-wkf{
+  margin: 120rpx auto;
+  font-size: 32rpx;
+  color: #ff0000;
+}
+.bg-ccc{
+  background: #ccc;
+}
+page{
+  background: #f2f2f2;
+}

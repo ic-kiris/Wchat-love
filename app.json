@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/scan/scan",
+    "pages/tabBar/Today/index",
+    "pages/tabBar/me/index",
+    "pages/tabBar/say/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#e07883",
+    "backgroundColor": "#f5f5f5",
+    "navigationBarTitleText": "临职小电哥",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#E6E6E6",
+    "selectedColor": "#F01905",
+    "borderStyle": "white",
+    "backgroundColor": "#FAFAFA",
+    "list": [
+      {
+        "iconPath": "/image/xx-news.png",
+        "selectedIconPath": "/image/xx-news.png",
+        "pagePath": "pages/tabBar/Today/index",
+        "text": "今日消息"
+      },
+      {
+        "iconPath": "/image/add.png",
+        "selectedIconPath": "/image/add.png",
+        "pagePath": "pages/tabBar/say/index",
+        "text": "表白发布"
+      },
+      {
+        "iconPath": "/image/xx-bg.png",
+        "selectedIconPath": "/image/xx-bg.png",
+        "pagePath": "pages/tabBar/me/index",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "subPackages": [
+    {
+      "root": "pages/Today/",
+      "pages": [
+        "pages/details/details"
+      ]
+    },
+    {
+      "root": "pages/me/",
+      "pages": [
+        "pages/mine/index",
+        "pages/location/location",
+        "pages/user-about/user-about",
+        "pages/user-comment/user-comment"
+      ]
+    }
+  ],
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
+}

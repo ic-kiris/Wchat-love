@@ -1,0 +1,213 @@
+#app {
+  border-top: 1px solid #fafafa;
+  padding-bottom: 50rpx;
+}
+#app .tz-pd{
+  width: 90%;
+  height: 55rpx;
+  display: flex;
+  line-height: 55rpx;
+  display: -webkit-flex;
+  background: #f2f2f2;
+  margin: 0 40rpx;
+}
+#app form {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 20rpx 40rpx 0;
+}
+.weui-uploader__file {
+padding: 60rpx 70rpx;
+margin: 0 auto;
+}
+#app form .txt-title {
+  width: 100%;
+  font-size: 30rpx;
+  color: #000;
+  padding: 10rpx 20rpx;
+  line-height: 50rpx;
+  background: #f2f2f2;
+  border-bottom: 1px solid #fafafa;
+}
+
+#app form .input-title {
+  caret-color: #b2b2b2;
+  float: right;
+  width: 75%;
+  letter-spacing: 4rpx;
+  font-size: 26rpx;
+  color: #b2b2b2;
+  font-weight: 500;
+}
+
+.clearfix {
+  clear: both;
+}
+
+#app form .input-class {
+  font-size: 26rpx;
+  color: #b2b2b2;
+  height: 102rpx;
+  line-height: 102rpx;
+  font-family: -apple-system,
+                 BlinkMacSystemFont,
+                 'PingFang SC',
+                 'Hiragino Sans GB',
+                 'Microsoft YaHei',
+                 sans-serif;
+}
+
+#app form .nr-dh-con {
+  margin-top: 30rpx;
+  font-size: 30rpx;
+  background: #f2f2f2;
+  padding: 15rpx;
+  color: #000;
+}
+
+#app form .textarea {
+ caret-color:#b2b2b2;
+  width: 100%;
+  letter-spacing: 4rpx;
+  padding-left: 30rpx;
+  font-size: 28rpx;
+  display: block;
+  color: #b2b2b2;
+  border-bottom: 1px solid #fafafa;
+  height: 400rpx !important;
+  line-height: 46rpx;
+  padding-top: 26rpx;
+  -webkit-border-radius: 5rpx;
+  -moz-border-radius: 5rpx;
+  border-radius: 5rpx;
+}
+
+#app form .upload-image {
+  width: 128rpx;
+  height: 128rpx;
+  display: inline-block;
+  -webkit-border-radius: 15rpx;
+  -moz-border-radius: 15rpx;
+  border-radius: 15rpx;
+  margin-right: 10rpx;
+}
+
+#app form .btn-upload {
+  width: 128rpx;
+  display: inline-block;
+  background-color: #fafafa;
+  height: 128rpx;
+  text-align: center;
+  line-height: 128rpx;
+  margin: 24rpx 0 0 0;
+  padding: 0; 
+  color: #e6e6e6;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.btn-upload image{
+  width: 100%;
+  height: 100%;
+}
+#app form .button-hover {
+  background-color: #ccc;
+  color: white;
+}
+
+#app form .tip >text{
+  color: rgb(155, 150, 150);
+  font-size: 26rpx;
+  line-height: 46rpx;
+}
+
+#app form .switch-view {
+  color: #b2b2b2;
+  font-size: 26rpx;
+}
+
+.line-wx-h{
+   height: 42rpx;
+   margin-top: 40rpx;
+}
+.line-wx-h>view{
+float:left;
+line-height:40rpx;
+width:48%;
+}
+.wx-switch-input {
+  width: 42px !important;
+  height: 20px !important;
+}
+
+.wx-switch-input::before {
+  width: 41px !important;
+  height: 20px !important;
+}
+
+.wx-switch-input::after {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+button::after {
+  border: none;
+}
+
+#app form .btn-group .btn-reset {
+  float: right;
+  background-color: #fff;
+  height: 39rpx;
+  color: #b2b2b2;
+  line-height: 39rpx;
+  font-size: 26rpx;
+  text-align: center;
+  transition: all 0.15s;
+}
+
+#app form .btn-reset {
+  margin-right: 5rpx;
+}
+
+#app form .btn-fb {
+  margin-top: 100rpx;
+  margin-bottom: 60rpx;
+}
+
+#app form .btn-fb button {
+  height: 84rpx;
+  line-height: 84rpx;
+  font-size: 34rpx;
+  background: RGB(220, 20, 60);
+  color: #fff;
+  margin: 0 60rpx;
+}
+
+#app form .btn-active {
+  color: blue;
+}
+
+#pao-gd {
+  flex: 3;
+  height: 55rpx;
+  line-height: 55rpx;
+}
+
+#pao-gd .swiper_item {
+  font-size: 25rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  letter-spacing: 2px;
+  color: #000;
+}
+
+.tz {
+  width: 45rpx;
+  height: 45rpx;
+  vertical-align: middle;
+  margin: 4rpx 16rpx;
+}
